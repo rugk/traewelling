@@ -26,7 +26,7 @@ class ReportController extends Controller
      *              @OA\Property(property="subject_type", type="string", enum={"Event", "Status", "User"},
      *                                                    example="Status"),
      *              @OA\Property(property="subject_id", type="integer", example=1),
-     *              @OA\Property(property="reason", type="string", enum={"inappropriate", "unplausible", "spam",
+     *              @OA\Property(property="reason", type="string", enum={"inappropriate", "implausible", "spam",
      *                                              "illegal", "other"}, example="inappropriate"),
      *              @OA\Property(property="description", type="string", example="The status is inappropriate because..."),
      *          ),
