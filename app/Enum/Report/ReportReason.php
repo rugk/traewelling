@@ -12,10 +12,11 @@ enum ReportReason: string
 
     public function getPriority(): int {
         return match ($this) {
-            self::OTHER, self::IMPLAUSIBLE => 0,
-            self::INAPPROPRIATE            => 10,
-            self::SPAM                     => 50,
-            self::ILLEGAL                  => 100,
+            self::IMPLAUSIBLE   => 0,
+            self::SPAM          => 10,
+            self::OTHER         => 20,
+            self::INAPPROPRIATE => 50,
+            self::ILLEGAL       => 100,
         };
     }
 }
